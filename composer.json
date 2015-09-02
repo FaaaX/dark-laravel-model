@@ -1,0 +1,18 @@
+{
+  "name": "dark-templar/laravel-model",
+  "description": "Extends Laravel model",
+  "authors": [
+    {
+      "name": "Martin Hansen",
+      "email": "dark@darktemplar.dk"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DarkTemplar\\DarkModel\\": "src"
+    }
+  }
+}
