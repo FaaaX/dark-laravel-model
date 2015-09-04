@@ -24,4 +24,9 @@ class Model extends BaseModel
         } else
             $this->casts = \Cache::get($cache_key);
     }
+    public function getCreatedAtAttribute($value) {
+        return Carbon::createFromTimestamp(strtotime($value))
+            ->timezone('Europe/Copenhagen') // TODO  hent fra session eller db
+            ->toDateTimeString();
+    }
 }
