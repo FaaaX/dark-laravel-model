@@ -1,5 +1,6 @@
 <?php namespace DarkTemplar\DarkModel;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model as BaseModel;
 
 class Model extends BaseModel
